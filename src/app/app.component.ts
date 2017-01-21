@@ -23,6 +23,8 @@ export class MyApp {
     },
     {
       name: 'RecordFood', component: RecordFoodPage
+    },{
+      name: 'Go home', component:HomePage 
     }]//Side-menu list
   }
 

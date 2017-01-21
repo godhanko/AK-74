@@ -1,27 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { RunningPage } from '../running/running';
 
 /*
-  Generated class for the Exercise page.
+  Generated class for the Running page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-exercise',
-  templateUrl: 'exercise.html'
+  selector: 'page-running',
+  templateUrl: 'running.html'
 })
-export class ExercisePage {
+export class RunningPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ExercisePage');
+    console.log('ionViewDidLoad RunningPage');
   }
-
-startRunning(){
-  this.navCtrl.push(RunningPage);
-}
 
 }
