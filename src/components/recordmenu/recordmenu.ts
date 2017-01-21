@@ -1,4 +1,9 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Nav, Platform } from 'ionic-angular';
+import { StatusBar, Splashscreen } from 'ionic-native';
+import { RecordExercisePage } from '../../pages/record-exercise/record-exercise';
+import { RecordFoodPage } from '../../pages/record-food/record-food';
+
 
 /*
   Generated class for the Recordmenu component.
@@ -11,17 +16,24 @@ import { Component,Input } from '@angular/core';
   templateUrl: 'recordmenu.html'
 })
 export class RecordmenuComponent {
- @Input() content;
+  @Input() content;
   text: string;
+  pages: Array<{ name: string, component: any }>;
 
-  constructor() {
-    console.log('Hello Recordmenu Component');
+  constructor(public platform: Platform) {
+    console.log('Nigga Recordmenu Component');
+    this.initializeApp();
+    this.pages = [{
+      name: "RecordExercise",
+      component: RecordExercisePage
+    }, {
+      name: "RecordFood",
+      component: RecordFoodPage
+    }]//Side-menu list
+  }
+  initializeApp() {
+
   }
 
-contents=[{
-  name:"AK47"
-},{
-  name:"FN FAL"
-}]
 
 }

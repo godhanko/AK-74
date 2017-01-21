@@ -27,14 +27,5 @@ contents=[{
   goback() {
     this.navCtrl.pop();
   }
-  openList() {
-    this.menuCtrl.open();
-  }
- closeMenu() {
-   this.menuCtrl.close();
- }
 
- toggleMenu() {
-   this.menuCtrl.toggle();
- }
 }

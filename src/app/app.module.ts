@@ -6,8 +6,9 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import {RecordmenuComponent} from '../components/recordmenu/recordmenu';
-
+import { RecordmenuComponent } from '../components/recordmenu/recordmenu';
+import { RecordExercisePage } from '../pages/record-exercise/record-exercise';
+import { RecordFoodPage } from '../pages/record-food/record-food';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import {RecordmenuComponent} from '../components/recordmenu/recordmenu';
     FoodPage,
     RecordPage,
     SetupPage,
-    RecordmenuComponent
+    RecordmenuComponent,
+    RecordExercisePage,
+    RecordFoodPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,7 +33,9 @@ import {RecordmenuComponent} from '../components/recordmenu/recordmenu';
     FoodPage,
     RecordPage,
     SetupPage,
-    RecordmenuComponent
+    RecordmenuComponent,
+    RecordExercisePage,
+    RecordFoodPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
