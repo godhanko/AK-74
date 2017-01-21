@@ -1,6 +1,8 @@
 import { Component ,Input} from '@angular/core';
 import {NavController, NavParams, MenuController, } from 'ionic-angular';
 
+
+
 /*
   Generated class for the Record page.
 
@@ -12,20 +14,11 @@ import {NavController, NavParams, MenuController, } from 'ionic-angular';
   templateUrl: 'record.html'
 })
 export class RecordPage {
- @Input() content;
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    public menuCtrl: MenuController) { }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RecordPage');
+//  @Input() content;
+  constructor(public navCtrl: NavController) { 
+    
   }
 
-contents=[{
-  name:"AK47"
-}]
-
-  goback() {
-    this.navCtrl.pop();
-  }
 
 }
