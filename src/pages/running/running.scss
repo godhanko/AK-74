@@ -2,7 +2,35 @@ page-running {
 
 }
 
+#running-data{
+position: relative;
+margin:-400px auto;
+}
 #counter{
 position:relative;
 margin: 0px auto;
+bottom: -115px;
+}
+#time{
+position: relative;
+margin-left: 3px;
+top: 113px;
+}
+#cal-lose{
+position:relative;
+margin: 0px auto; 
+top: 56px;
+}
+#point{
+position: relative;
+margin-left: 70%;
+}
+
+#dog-running{
+    position:relative;
+    margin: 0px auto;
+    width:500px;
+    height:600px;
+    top:-150px;
+
 }
