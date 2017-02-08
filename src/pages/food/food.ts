@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Slides } from 'ionic-angular/es2015';
+import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
@@ -13,12 +14,30 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class FoodPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) { }
+
+  slides = [
+    {
+      title: "Breakfast",
+      image: "../assets/1.jpg"
+    },
+    {
+      title: "Lunch",
+      image: "../assets/2.jpg"
+    },
+    {
+      title: "Dinner",
+      image: "../assets/3.jpg"
+    }, {
+      title: "Others",
+      image: "../assets/4.jpg"
+    }
+  ];
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FoodPage');
   }
-  goHome(){
+  goHome() {
     this.navCtrl.pop();
   }
 
